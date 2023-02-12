@@ -42,23 +42,23 @@ const Home: NextPage = () => {
       bg="gray.900"
       direction="column"
     >
-      <Flex p={20} direction={'row'} alignItems="center">
-        <Text fontSize="120px" color="white" w="150px" textAlign="center">
+      <Flex p={{ base: 0, md: 20}} direction={'row'} alignItems="center">
+        <Text fontSize={{ base: '6xl', md: '120px'}} color="white" w={{ base: '80%', md: '180px'}} textAlign="center" fontFamily="Roboto Mono">
           {hour.toString().padStart(2, '0')}
         </Text>
         <Text
-          fontSize="120px"
+          fontSize={{ base: '6xl', md: '120px'}}
           color="white"
         >
           :
         </Text>
-        <Text fontSize="120px" color="white" w="150px" textAlign="center">
+        <Text fontSize={{ base: '6xl', md: '120px'}} color="white" w={{ base: '80%', md: '180px'}} textAlign="center" fontFamily="Roboto Mono">
           {minute.toString().padStart(2, '0')}
         </Text>
-        <Text fontSize="120px" color="white">
+        <Text fontSize={{ base: '6xl', md: '120px'}} color="white">
           :
         </Text>
-        <Text fontSize="120px" color="white" w="150px" textAlign="center">
+        <Text fontSize={{ base: '6xl', md: '120px'}} color="white" w={{ base: '80%', md: '180px'}} textAlign="center" fontFamily="Roboto Mono">
           {second.toString().padStart(2, '0')}
         </Text>
       </Flex>
